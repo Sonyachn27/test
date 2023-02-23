@@ -1,0 +1,41 @@
+$white: #FFFFFF;
+$black: #000000;
+$ligth-grey: #777777;
+$blue: #008BAA;
+$link: #CB0000;
+$font-title: 'Trebuchet MS';
+$font-text: 'Arial';
+@mixin title{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 130%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+margin: 0 auto;
+font-style: normal;
+font-family: 'Trebuchet MS', 'Arial', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    // width: fit-content;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: inherit;
+}
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1040px;
+    width: 100%;
+}
+@import "./header.scss";
+@import "./presentation.scss";
+@import "./tour.scss";

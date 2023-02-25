@@ -26,11 +26,12 @@ button {
   margin: 0 auto;
   max-width: 1040px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 header {
   background: #008BAA;
-  padding: 30px;
+  padding: 15px 0;
 }
 
 .header_wrap {
@@ -39,6 +40,7 @@ header {
   justify-content: space-between;
   color: #FFFFFF;
   font-family: "Arial";
+  text-align: center;
 }
 
 .logo {
@@ -54,22 +56,37 @@ header {
 .logo span {
   width: 149px;
 }
+.logo a {
+  width: 120px;
+}
+.logo a img {
+  width: 100%;
+}
 
 .tel {
   display: flex;
   align-items: center;
   gap: 8px;
+  width: 100%;
+  justify-content: center;
 }
 .tel a {
   font-weight: 400;
   font-size: 30px;
   line-height: 34px;
+  width: 100%;
+}
+.tel span {
+  width: 100%;
 }
 
 .social {
   display: flex;
   align-items: center;
   gap: 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: center;
 }
 
 .btn_social {
@@ -85,7 +102,7 @@ header {
 }
 
 .page_img {
-  padding: 270px 758px 33px 32px;
+  padding: 270px 720px 33px 32px;
   background: url(../img/image.png);
   position: relative;
   margin-bottom: 24px;
@@ -178,9 +195,9 @@ header {
   font-size: 35px;
   line-height: 130%;
   width: 100%;
-  max-width: 293px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   position: relative;
-  z-index: 0;
 }
 
 .stars_link::after {
@@ -188,10 +205,10 @@ header {
   position: absolute;
   width: 100%;
   height: 2px;
-  color: #000000;
+  background: #000000;
   bottom: 0;
   left: 0;
-  z-index: 1;
+  opacity: 0.25;
 }
 
 .price {
@@ -280,9 +297,602 @@ header {
 .tour_card {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .card_wrap {
   display: flex;
   gap: 40px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.title:hover {
+  color: #CB0000;
+  transition: 0.75s ease;
+}
+
+.card_img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.card_text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card_title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card_title span {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.title {
+  font-family: "Trebuchet MS";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 130%;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  bottom: 0;
+  left: 0;
+  opacity: 0.25;
+}
+
+.price_block {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-family: "Trebuchet MS";
+}
+
+.price_sales {
+  text-decoration: line-through;
+  text-decoration-color: #CB0000;
+}
+
+.tour_sales {
+  display: flex;
+  font-family: "Arial";
+  flex-direction: column;
+  color: #000000;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+}
+
+.sales_info {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+  padding: 40px 0px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.info_price {
+  color: #008BAA;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  max-width: 121px;
+}
+
+.info_text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.info_text span:nth-of-type(1) {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+}
+.info_text span:nth-of-type(2) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.info_promo {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #008BAA;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.info_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #00AAAA 0%, #008BAA 100%);
+  border-radius: 42px;
+  padding: 13px 42px;
+  gap: 8px;
+  width: 100%;
+  max-width: 224px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  max-height: 47px;
+}
+
+.sales_btn {
+  background: #F7F7F7;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120%;
+  text-align: center;
+  color: #777777;
+  position: relative;
+}
+
+.sales_btn:after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  background: url(../img/akar-icons_chevron-up.svg);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(0, -50%);
+  transition: all 0.35s;
+  right: 30px;
+  z-index: 1;
+}
+
+.article_wrap {
+  display: grid;
+  grid-template-areas: "article" "aside";
+  grid-template-columns: 1fr 0.3fr;
+  position: relative;
+  gap: 40px;
+}
+
+.article_wrap:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #E0E0E0;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-family: "Arial";
+  width: 100%;
+  max-width: 776px;
+}
+article h1 {
+  font-family: "Trebuchet MS";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  text-align: start;
+  width: 100%;
+  margin-bottom: 32px;
+}
+article h2 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  margin-bottom: 8px;
+}
+article p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: start;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.initial {
+  font-weight: 700;
+}
+
+blockquote {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  position: relative;
+}
+
+.quote {
+  position: relative;
+  right: 0;
+  max-width: 704px;
+  font-style: italic;
+}
+
+.quote:after {
+  content: "";
+  position: absolute;
+  height: calc(100% + 8px);
+  width: 8px;
+  top: -4px;
+  left: -16px;
+  background: #008BAA;
+}
+
+table {
+  width: 100%;
+  max-width: 744px;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+tr {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+th {
+  font-weight: 700;
+  border: none;
+  background: #F7F7F7;
+}
+
+td {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+th,
+td {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 180px;
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  padding: 0 8px;
+}
+
+tr:nth-child(4) td {
+  border: none;
+}
+
+ul {
+  width: 100%;
+  max-width: 776px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 10px;
+}
+ul li {
+  margin-left: 15px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial";
+  color: #000000;
+  width: 100%;
+  max-width: 227px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+aside span:nth-child(1) {
+  font-family: "Trebuchet MS";
+  font-size: 100px;
+  line-height: 116px;
+  letter-spacing: -0.05em;
+  color: #777777;
+  width: 100%;
+}
+aside span:nth-child(2) {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 31px;
+  width: 100%;
+}
+
+.aside_paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #777777;
+  width: 100%;
+}
+
+footer {
+  padding: 16px 0;
+}
+
+.footer_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copy {
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #000000;
+  font-family: "Arial";
+  gap: 3px;
+}
+.copy a {
+  color: #008BAA;
+}
+.copy a:hover {
+  color: #CB0000;
+}
+.copy a:visited {
+  color: #670303;
+}
+
+@media screen and (max-width: 1123px) {
+  .container {
+    max-width: 950px;
+  }
+  .page_img {
+    padding: 213px 438px 107px 32px;
+  }
+  .sales_info {
+    gap: 10px;
+    padding: 40px 7px;
+  }
+  .info_btn {
+    padding: 13px 20px;
+    max-width: 190px;
+    font-size: 14px;
+  }
+  .quote {
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 965px) {
+  .container {
+    max-width: 770px;
+  }
+  .header_wrap {
+    gap: 15px;
+  }
+  .logo {
+    max-width: 100px;
+  }
+  .logo span {
+    display: none;
+  }
+  .tel a {
+    font-size: 25px;
+  }
+  .page_img {
+    padding: 213px 438px 107px 32px;
+  }
+  .page_triangle {
+    bottom: -1px;
+    right: -7px;
+    width: 320px;
+  }
+  .page_rating {
+    gap: 30px;
+  }
+  .sales_info {
+    gap: 0px;
+    padding: 0px 0px;
+  }
+  .article_wrap {
+    gap: 20px;
+  }
+  article {
+    max-width: 576px;
+  }
+  article h1 {
+    font-size: 32px;
+  }
+  .quote {
+    max-width: 525px;
+  }
+  aside {
+    max-width: 150px;
+  }
+  aside span:nth-child(1) {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 756px) {
+  .container {
+    max-width: 650px;
+    padding: 0 5px;
+  }
+  .logo {
+    flex-direction: column;
+  }
+  .logo span {
+    display: none;
+  }
+  .tel {
+    flex-direction: column;
+  }
+  .tel a {
+    font-size: 25px;
+  }
+  .page_img {
+    padding: 147px 287px 107px 32px;
+  }
+  .page_circle p {
+    max-width: 130px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .rating_sun {
+    display: none;
+  }
+  .card_wrap {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .sales_info {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .info_text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .sales_btn:after {
+    left: 60%;
+  }
+  .article_wrap {
+    grid-template-areas: "article";
+    grid-template-columns: 1fr;
+  }
+  aside {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container {
+    max-width: 450px;
+  }
+  .header_wrap {
+    flex-wrap: wrap;
+  }
+  .tel {
+    max-width: 180px;
+  }
+  .page_img {
+    padding: 104px 32px 64px 32px;
+  }
+  .page_circle {
+    max-width: 180px;
+    padding: 32px 0 32px 0;
+  }
+  .page_circle p {
+    max-width: 169px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .page_circle span:nth-of-type(1) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .code {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .stars_link {
+    font-size: 20px;
+  }
+  .mark_block {
+    max-width: 80px;
+  }
+  .price {
+    font-size: 25px;
+  }
+  .rating_mark {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .sales_btn:after {
+    left: 65%;
+  }
+  .copy {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .container {
+    max-width: 360px;
+  }
+  .hotel_stars {
+    flex-wrap: wrap;
+  }
+  article h1 {
+    font-size: 21px;
+  }
+  article p {
+    font-size: 12px;
+  }
+  .footer_wrap {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .copy {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .copy span {
+    text-align: center;
+  }
+  .copy a {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 510px) {
+  .container {
+    max-width: 320px;
+  }
+  .rating_mark {
+    flex-direction: column-reverse;
+  }
+  .mark_result {
+    order: 1;
+  }
+  .sales_btn:after {
+    left: 70%;
+  }
+  article h2 {
+    font-size: 19px;
+  }
+  .quote {
+    margin-left: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

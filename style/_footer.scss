@@ -1,0 +1,26 @@
+footer{
+    padding: 16px 0;
+}
+.footer_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copy{
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: $black;
+    font-family: $font-text;
+    gap: 3px;
+        a{
+            color: $blue;
+        }
+        a:hover{
+            color:$link;
+        }
+        a:visited{
+            color: #670303;
+        }
+}

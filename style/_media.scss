@@ -1,0 +1,240 @@
+ @media screen and (max-width:1123px){
+  .container{
+    max-width: 950px;
+  }
+  .page_img {
+    padding: 213px 438px 107px 32px;
+}
+.sales_info {
+    gap: 10px;
+    padding: 40px 7px;
+    }
+    .info_btn {
+    padding: 13px 20px;
+    max-width: 190px;
+    font-size: 14px;
+}
+.quote {
+    max-width: 650px;
+}
+ }
+ @media screen and (max-width: 965px){
+     .container{
+        max-width: 770px;
+     }
+     .header_wrap {
+        gap: 15px;
+    }
+.logo{
+    max-width: 100px;
+    span{
+        display:none;
+    }
+}
+.tel{
+    a{ 
+        font-size: 25px;
+    }
+    
+}
+.page_img {
+    padding: 213px 438px 107px 32px;
+}
+.page_triangle {
+    bottom: -1px;
+    right: -7px;
+    width: 320px;
+ }
+ .page_rating {
+    gap: 30px;
+}
+.sales_info {
+    gap: 0px;
+    padding: 0px 0px;
+}
+.article_wrap {
+    gap: 20px;
+    }
+article{
+    max-width: 576px;
+        h1{
+            font-size: 32px;
+        }
+}
+.quote {
+    max-width: 525px;
+}
+aside{
+    max-width: 150px;
+    span:nth-child(1){
+        font-size: 60px;
+    }
+}
+ }
+ @media screen and (max-width:756px){
+     .container{
+        max-width: 650px;
+        padding: 0 5px;
+     }
+    .logo{
+        flex-direction: column;
+        span{
+            display: none;
+        }
+        a{
+
+        }
+    }
+    .tel{
+        flex-direction: column;
+        a{
+            font-size: 25px;
+        }
+        
+    }
+     .page_img {
+        padding: 147px 287px 107px 32px;
+    }
+    .page_circle{
+
+    p {
+        max-width: 130px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+ }
+ .rating_sun{
+    display: none;
+ }
+ .card_wrap {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sales_info {
+    flex-direction: column;
+    gap: 15px;
+}
+.info_text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sales_btn:after {
+    left: 60%;
+}
+.article_wrap {
+        grid-template-areas:
+        "article";
+        grid-template-columns: 1fr;
+    }
+aside{
+    display: none;
+}
+}
+ @media screen and (max-width:650px){
+    .container{
+        max-width: 450px;
+    }
+    .header_wrap{
+        flex-wrap: wrap;
+    }
+    .tel{
+        
+        max-width: 180px;
+    }
+    .page_img {
+        padding: 104px 32px 64px 32px;
+    }
+    .page_circle{
+        max-width: 180px;
+        padding: 32px 0 32px 0;
+        p{  
+            max-width: 169px;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+        span:nth-of-type(1){
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .code{
+            font-size: 18px;
+            line-height: 20px;
+    }
+    .stars_link{
+        font-size: 20px;
+    }
+    .mark_block {
+        max-width: 80px;
+    }
+    .price {
+        font-size: 25px;
+    }
+    .rating_mark {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .sales_btn:after {
+        left: 65%;
+    }
+    .copy {
+        width: 100%;
+        max-width: 280px;
+    }
+ }
+ @media screen and (max-width:510px){
+     .container{
+    max-width: 360px;
+     }
+     .hotel_stars {
+        flex-wrap: wrap;
+    }
+    article  {
+        h1{
+        font-size: 21px;
+    }
+        p{
+            font-size: 12px;
+        }
+    }
+    .footer_wrap {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .copy {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        span{
+            text-align: center;
+        }
+        a{
+            text-align: center;
+        }
+    }
+ }
+ @media screen and (max-width:510px){
+    .container{
+   max-width: 320px;
+    }
+    .rating_mark {
+        flex-direction: column-reverse;
+    }
+    .mark_result {
+        order: 1;
+    }
+    .sales_btn:after {
+        left: 70%;
+    }
+    article h2 {
+        font-size: 19px;
+    }
+    .quote{
+        margin-left: 15px;
+    }
+}

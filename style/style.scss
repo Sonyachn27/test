@@ -35,7 +35,11 @@ button{
     margin: 0 auto;
     max-width: 1040px;
     width: 100%;
+    box-sizing: border-box;
 }
 @import "./header.scss";
 @import "./presentation.scss";
 @import "./tour.scss";
+@import "./article.scss";
+@import "./footer.scss";
+@import "./media.scss";
